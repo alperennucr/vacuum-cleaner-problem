@@ -10,7 +10,7 @@ import random as r
 randNum = r.randint(0,1)
 randNum2 = r.randint(0, 1)
 isSucceed = False
-
+print("NOTE: Carpet array has two spaces. That spaces means there are two carpets. And the numbers specify if there any dirt on the carpet.")
 carpets = [randNum, randNum2] # 0-> dirty, 1-> clean
 print("Carpets: ["+str(carpets[0]) +", "+str(carpets[1])+"]")
 visits = [0,0]
@@ -48,5 +48,5 @@ while isSucceed == False:
         
     else:#If the carpet that robot stands on is clean
         visits[robot] = 1
-        print("No dirt on carpet "+ str(carpets[robot]))
+        print("No dirt on carpet "+ str(robot))
         CheckGoalState()
